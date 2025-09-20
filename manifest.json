@@ -1,0 +1,199 @@
+{
+  "name": "أبطال كيد الأعداء - لعبة الذكاء المثيرة",
+  "short_name": "أبطال البطاقات",
+  "description": "لعبة ذكاء عربية مثيرة بتحديات متنوعة وألغاز ثقافية، اختبر قدراتك العقلية واستمتع بتجربة فريدة",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1a2e",
+  "theme_color": "#6c5ce7",
+  "categories": ["education", "game", "puzzle"],
+  "lang": "ar",
+  "dir": "rtl",
+  "scope": "/",
+  "id": "/",
+  
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "screenshots/screenshot1.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "description": "شاشة الرئيسية للمراحل"
+    },
+    {
+      "src": "screenshots/screenshot2.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "description": "شاشة اللعب مع البطاقات"
+    },
+    {
+      "src": "screenshots/screenshot3.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "description": "شاشة الألغاز الثقافية"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "بدء لعبة سريعة",
+      "short_name": "لعبة سريعة",
+      "description": "ابدأ لعبة جديدة بسرعة",
+      "url": "/index.html?mode=quick",
+      "icons": [
+        {
+          "src": "icons/shortcut-play.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "التحدي اليومي",
+      "short_name": "اليومي",
+      "description": "جرب التحدي اليومي الجديد",
+      "url": "/index.html?mode=daily",
+      "icons": [
+        {
+          "src": "icons/shortcut-daily.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "الملف الشخصي",
+      "short_name": "ملفي",
+      "description": "اطلع على إحصائياتك وإنجازاتك",
+      "url": "/index.html?screen=profile",
+      "icons": [
+        {
+          "src": "icons/shortcut-profile.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://yourdomain.com/game"
+    }
+  ],
+
+  "prefer_related_applications": false,
+
+  "protocol_handlers": [
+    {
+      "protocol": "web+cardheroes",
+      "url": "/index.html?url=%s"
+    }
+  ],
+
+  "display_override": ["window-controls-overlay", "standalone"],
+
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+
+  "handle_links": "preferred",
+
+  "permissions": [
+    "notifications",
+    "vibration",
+    "storage",
+    "clipboard-write"
+  ],
+
+  "background": {
+    "service_worker": "sw.js",
+    "type": "module"
+  },
+
+  "file_handlers": [
+    {
+      "action": "/index.html",
+      "accept": {
+        "application/json": [".save"]
+      }
+    }
+  ],
+
+  "share_target": {
+    "action": "/index.html?share",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+
+  "capture_links": "none",
+
+  "iarc_rating_id": "e39c13cf-5de6-4b67-9f2d-6a5c8b7d4a1b"
+}
