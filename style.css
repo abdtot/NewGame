@@ -288,7 +288,6 @@ h1 {
     opacity: 0.3;
     z-index: 1;
 }
-
 .cultural-puzzle-overlay {
     position: fixed;
     top: 0;
@@ -311,15 +310,15 @@ h1 {
 }
 
 .cultural-puzzle-container {
-    background: rgba(44, 62, 80, 0.9);
+    background: rgba(44, 62, 80, 0.95);
     border-radius: 20px;
     padding: 25px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: white;
-    backdrop-filter: blur(10px);
+    color: var(--light);
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
@@ -336,65 +335,78 @@ h1 {
 }
 
 .puzzle-header h2 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
+    margin: 0 0 15px 0;
+    font-size: 26px;
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 .puzzle-category {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 8px 18px;
+    border-radius: 25px;
     font-size: 14px;
     display: inline-block;
     margin-bottom: 15px;
     color: var(--secondary);
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .puzzle-instruction {
-    margin: 15px 0;
+    margin: 18px 0;
     font-style: italic;
     opacity: 0.9;
     color: var(--light);
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 10px;
 }
 
 .puzzle-question {
     font-size: 18px;
-    margin: 20px 0;
-    line-height: 1.5;
+    margin: 22px 0;
+    line-height: 1.6;
     color: var(--light);
     background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 12px;
-    border-left: 3px solid var(--accent);
+    padding: 18px;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent);
+    text-align: center;
+    font-weight: 500;
 }
 
 .puzzle-options {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
-    margin: 20px 0;
+    gap: 15px;
+    margin: 25px 0;
 }
 
 .puzzle-option {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 16px;
     color: var(--light);
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
 }
 
 .puzzle-option:hover {
     background-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     border-color: var(--secondary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .puzzle-option:active {
@@ -404,32 +416,59 @@ h1 {
 .puzzle-option.correct {
     background-color: rgba(0, 184, 148, 0.2);
     border-color: var(--success);
+    color: var(--light);
 }
 
 .puzzle-option.incorrect {
     background-color: rgba(214, 48, 49, 0.2);
     border-color: var(--danger);
+    color: var(--light);
 }
 
 .puzzle-result {
-    margin: 20px 0 0 0;
-    padding: 15px;
-    border-radius: 12px;
+    margin: 25px 0 0 0;
+    padding: 18px;
+    border-radius: 15px;
     font-weight: bold;
+    font-size: 16px;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .puzzle-result.correct {
     background-color: rgba(0, 184, 148, 0.2);
     color: var(--success);
-    border: 1px solid rgba(0, 184, 148, 0.3);
+    border-color: rgba(0, 184, 148, 0.3);
 }
 
 .puzzle-result.incorrect {
     background-color: rgba(214, 48, 49, 0.2);
     color: var(--danger);
-    border: 1px solid rgba(214, 48, 49, 0.3);
+    border-color: rgba(214, 48, 49, 0.3);
 }
+
+/* زر الإغلاق */
+.puzzle-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.puzzle-close:hover {
+    background: rgba(253, 121, 168, 0.2);
+    transform: rotate(90deg);
+}
+
 
 .game-screen {
     display: none;
