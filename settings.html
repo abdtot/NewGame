@@ -1,0 +1,162 @@
+<!-- settings.html -->
+<section id="settings-screen" class="screen" role="region" aria-labelledby="settings-title">
+    <header class="glass-effect" role="banner">
+        <h1 id="settings-title">
+            <i class="fas fa-cog" aria-hidden="true"></i>
+            الإعدادات
+        </h1>
+    </header>
+    
+    <div class="settings-container">
+        <section class="settings-group glass-effect" role="group" aria-labelledby="general-settings">
+            <h3 id="general-settings" style="display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                الإعدادات العامة
+            </h3>
+            
+            <div class="setting-item" role="listitem">
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">الصوت</div>
+                    <div style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">تشغيل أو إيقاف الأصوات</div>
+                </div>
+                <label class="switch" aria-label="تبديل الصوت">
+                    <input type="checkbox" id="sound-toggle" checked aria-checked="true">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">الاهتزاز</div>
+                    <div style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">تفعيل الاهتزاز عند التفاعل</div>
+                </div>
+                <label class="switch" aria-label="تبديل الاهتزاز">
+                    <input type="checkbox" id="vibration-toggle" checked aria-checked="true">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 5px;">الإشعارات</div>
+                    <div style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">استلام إشعارات بالإنجازات</div>
+                </div>
+                <label class="switch" aria-label="تبديل الإشعارات">
+                    <input type="checkbox" id="notifications-toggle" checked aria-checked="true">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </section>
+        
+        <section class="settings-group glass-effect" role="group" aria-labelledby="appearance-settings">
+            <h3 id="appearance-settings" style="display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-palette" aria-hidden="true"></i>
+                المظهر
+            </h3>
+            
+            <div class="setting-item" role="listitem">
+                <div style="font-weight: 600;">السمة اللونية</div>
+                <div class="color-options" role="radiogroup" aria-label="اختيار اللون">
+                    <button class="color-option active" 
+                            style="background: #6c5ce7;" 
+                            data-color="#6c5ce7"
+                            role="radio" 
+                            aria-checked="true"
+                            aria-label="اللون الأرجواني"></button>
+                    <button class="color-option" 
+                            style="background: #00b894;" 
+                            data-color="#00b894"
+                            role="radio" 
+                            aria-checked="false"
+                            aria-label="اللون الأخضر"></button>
+                    <button class="color-option" 
+                            style="background: #fd79a8;" 
+                            data-color="#fd79a8"
+                            role="radio" 
+                            aria-checked="false"
+                            aria-label="اللون الوردي"></button>
+                    <button class="color-option" 
+                            style="background: #fdcb6e;" 
+                            data-color="#fdcb6e"
+                            role="radio" 
+                            aria-checked="false"
+                            aria-label="اللون الأصفر"></button>
+                    <button class="color-option" 
+                            style="background: #d63031;" 
+                            data-color="#d63031"
+                            role="radio" 
+                            aria-checked="false"
+                            aria-label="اللون الأحمر"></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="settings-group glass-effect" role="group" aria-labelledby="about-app">
+            <h3 id="about-app" style="display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                عن التطبيق
+            </h3>
+            
+            <div class="setting-item" role="listitem">
+                <div>الإصدار</div>
+                <div style="font-weight: 600; color: var(--accent);">2.0.0</div>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="share-app" aria-label="مشاركة التطبيق">
+                    <i class="fas fa-share-alt" aria-hidden="true"></i>
+                    مشاركة التطبيق
+                </button>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="install-app" aria-label="تثبيت التطبيق" style="display: none;">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                    تثبيت التطبيق
+                </button>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="rate-app" aria-label="تقييم التطبيق">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    تقييم التطبيق
+                </button>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn btn-danger" id="reset-app" aria-label="إعادة ضبط التطبيق">
+                    <i class="fas fa-trash" aria-hidden="true"></i>
+                    إعادة الضبط
+                </button>
+            </div>
+        </section>
+        
+        <section class="settings-group glass-effect" role="group" aria-labelledby="help-support">
+            <h3 id="help-support" style="display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-life-ring" aria-hidden="true"></i>
+                المساعدة والدعم
+            </h3>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="help-btn" aria-label="فتح دليل المساعدة">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
+                                    دليل المساعدة
+                </button>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="contact-btn" aria-label="اتصل بنا">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    اتصل بنا
+                </button>
+            </div>
+            
+            <div class="setting-item" role="listitem">
+                <button class="btn" id="privacy-btn" aria-label="سياسة الخصوصية">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    سياسة الخصوصية
+                </button>
+            </div>
+        </section>
+    </div>
+</section>
