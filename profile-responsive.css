@@ -1,0 +1,791 @@
+/* ============================================ */
+/* تحسينات للشاشات ذات حجم 760px فأقل */
+/* ============================================ */
+
+@media (max-width: 760px) {
+    /* تحسينات عامة للشاشة */
+    .achievement-category {
+        margin: 15px 0;
+        padding: 12px;
+        border-radius: 12px;
+    }
+    
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
+    
+    .category-header h3 {
+        font-size: 16px;
+    }
+    
+    .category-badge {
+        align-self: flex-start;
+        padding: 2px 8px;
+        font-size: 11px;
+    }
+    
+    .achievement-item {
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 10px;
+    }
+    
+    .achievement-content {
+        flex-direction: row;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .achievement-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+    
+    .achievement-title {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+    
+    .achievement-description {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+    
+    .progress-bar {
+        height: 5px;
+    }
+    
+    .progress-text {
+        font-size: 11px;
+    }
+    
+    /* تحسينات النوافذ المنبثقة */
+    .achievement-modal {
+        width: 95%;
+        padding: 20px;
+        margin: 10px;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+    
+    .modal-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
+    }
+    
+    .modal-body h3 {
+        font-size: 20px;
+    }
+    
+    .modal-description {
+        font-size: 14px;
+    }
+    
+    .modal-details {
+        padding: 12px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 8px 0;
+    }
+    
+    .detail-label,
+    .detail-value {
+        font-size: 13px;
+    }
+    
+    .modal-footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    /* تحسينات الإشعارات */
+    .achievement-notification {
+        left: 15px;
+        right: 15px;
+        max-width: none;
+        padding: 15px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .notification-icon {
+        font-size: 32px;
+        min-width: 50px;
+        height: 50px;
+    }
+    
+    .notification-content h4 {
+        font-size: 14px;
+    }
+    
+    .notification-content h3 {
+        font-size: 16px;
+    }
+    
+    .notification-content p {
+        font-size: 13px;
+    }
+    
+    .notification-tag {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+    
+    /* تحسينات Toast */
+    .toast-notification {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    /* تحسينات شريط تقدم المستوى */
+    .level-progress {
+        margin-top: 8px;
+    }
+    
+    .progress-track {
+        height: 6px;
+    }
+    
+    /* تحسينات حقول الإدخال */
+    #user-name,
+    #user-email {
+        padding: 10px 12px;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    /* تحسينات الزر حفظ */
+    #save-profile {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    /* تحسينات صورة الملف الشخصي */
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-avatar i {
+        font-size: 40px;
+    }
+    
+    /* تحسينات العناوين */
+    h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+
+/* ============================================ */
+/* تحسينات للشاشات ذات حجم 480px فأقل */
+/* ============================================ */
+
+@media (max-width: 480px) {
+    /* تحسينات عامة للشاشة */
+    .achievement-category {
+        margin: 12px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .category-header {
+        gap: 6px;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+    }
+    
+    .category-header h3 {
+        font-size: 15px;
+    }
+    
+    .category-badge {
+        padding: 1px 6px;
+        font-size: 10px;
+    }
+    
+    .achievement-item {
+        padding: 10px;
+        margin: 6px 0;
+        border-radius: 8px;
+    }
+    
+    .achievement-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    .earned-badge {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+    }
+    
+    .achievement-info {
+        width: 100%;
+    }
+    
+    .achievement-title {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    
+    .achievement-description {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+    
+    .achievement-progress {
+        margin-top: 8px;
+    }
+    
+    .progress-bar {
+        height: 4px;
+        margin-bottom: 4px;
+    }
+    
+    .progress-text {
+        font-size: 10px;
+    }
+    
+    /* تحسينات النوافذ المنبثقة */
+    .achievement-modal-overlay {
+        padding: 10px;
+    }
+    
+    .achievement-modal {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        border-radius: 15px;
+        max-height: 90vh;
+    }
+    
+    .modal-header {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .modal-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        order: 1;
+    }
+    
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        order: 2;
+        align-self: flex-end;
+    }
+    
+    .modal-body h3 {
+        font-size: 18px;
+        text-align: center;
+        order: 3;
+    }
+    
+    .modal-description {
+        font-size: 13px;
+        text-align: center;
+        order: 4;
+    }
+    
+    .modal-details {
+        padding: 10px;
+        margin: 15px 0;
+        order: 5;
+    }
+    
+    .detail-item {
+        padding: 6px 0;
+        gap: 3px;
+    }
+    
+    .detail-label,
+    .detail-value {
+        font-size: 12px;
+    }
+    
+    .modal-footer {
+        gap: 6px;
+        order: 6;
+    }
+    
+    .btn {
+        padding: 8px;
+        font-size: 12px;
+        gap: 5px;
+    }
+    
+    /* تحسينات الإشعارات */
+    .achievement-notification {
+        left: 10px;
+        right: 10px;
+        padding: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+    }
+    
+    .notification-icon {
+        font-size: 28px;
+        min-width: 45px;
+        height: 45px;
+        margin-bottom: 8px;
+    }
+    
+    .notification-content {
+        width: 100%;
+    }
+    
+    .notification-content h4 {
+        font-size: 13px;
+    }
+    
+    .notification-content h3 {
+        font-size: 15px;
+    }
+    
+    .notification-content p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .notification-tag {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .notification-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    /* تحسينات Toast */
+    .toast-notification {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 10px 12px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+    
+    /* تحسينات شريط تقدم المستوى */
+    .level-progress {
+        margin-top: 6px;
+    }
+    
+    .progress-track {
+        height: 5px;
+    }
+    
+    .progress-text {
+        font-size: 9px;
+    }
+    
+    /* تحسينات حقول الإدخال */
+    #user-name,
+    #user-email {
+        padding: 8px 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    
+    /* تحسينات التسميات */
+    label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    /* تحسينات زر الحفظ */
+    #save-profile {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    
+    /* تحسينات صورة الملف الشخصي */
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 15px;
+    }
+    
+    .profile-avatar i {
+        font-size: 35px;
+    }
+    
+    /* تحسينات العناوين */
+    h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    /* تحسينات الشبكة والأعمدة */
+    .profile-grid,
+    .achievements-grid {
+        gap: 10px;
+    }
+    
+    /* تحسينات المسافات */
+    .profile-section,
+    .achievements-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* تحسينات النصوص الطويلة */
+    .achievement-description,
+    .modal-description {
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    /* تحسينات التمرير */
+    .achievements-container {
+        max-height: 50vh;
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+    
+    /* شريط تمرير مخصص */
+    .achievements-container::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    .achievements-container::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 2px;
+    }
+    
+    .achievements-container::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+    }
+    
+    /* تحسينات الصور والخلفيات */
+    .glass-effect {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+    
+    /* تحسينات الرسوم المتحركة */
+    .achievement-item.earned {
+        animation: pulse 2.5s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+    }
+    
+    /* تحسينات الحواف */
+    .achievement-item,
+    .achievement-modal,
+    .achievement-notification {
+        border-width: 1px;
+    }
+    
+    /* تحسينات الظلال */
+    .achievement-item:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-1px);
+    }
+    
+    /* تحسينات الأيقونات */
+    .fas, .fab {
+        font-size: 90%;
+    }
+    
+    /* تحسينات الاستجابة للنص العربي */
+    .achievement-title,
+    .modal-body h3,
+    .notification-content h3 {
+        line-height: 1.3;
+    }
+    
+    /* تحسينات النصوص متعددة الأسطر */
+    p, .detail-value {
+        line-height: 1.4;
+    }
+    
+    /* تحسينات المسافات الداخلية للعناصر */
+    .profile-info,
+    .user-stats {
+        padding: 10px;
+    }
+    
+    /* تحسينات للأجهزة التي تدعم اللمس */
+    button, 
+    .achievement-item,
+    .profile-avatar {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* تحسينات للمسافات بين العناصر التفاعلية */
+    .modal-footer .btn,
+    #save-profile,
+    .notification-close {
+        margin-top: 5px;
+    }
+    
+    /* تحسينات لعناصر النموذج */
+    .profile-form {
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    /* تحسينات للأجهزة ذات الشاشات الداكنة */
+    @media (prefers-color-scheme: dark) {
+        .achievement-item {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .achievement-modal {
+            background: linear-gradient(135deg, rgba(20, 20, 30, 0.98), rgba(10, 10, 20, 0.98));
+        }
+        
+        #user-name,
+        #user-email {
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
+    
+    /* تحسينات للتوجيه الأفقي على الهواتف */
+    @media (max-height: 480px) and (orientation: landscape) {
+        .achievement-modal {
+            max-height: 80vh;
+            padding: 10px;
+        }
+        
+        .achievements-container {
+            max-height: 40vh;
+        }
+        
+        .profile-section {
+            padding: 10px;
+        }
+    }
+}
+
+/* ============================================ */
+/* تحسينات إضافية للشاشات الصغيرة جداً */
+/* ============================================ */
+
+@media (max-width: 360px) {
+    .achievement-title {
+        font-size: 13px;
+    }
+    
+    .achievement-description {
+        font-size: 11px;
+    }
+    
+    .modal-body h3 {
+        font-size: 16px;
+    }
+    
+    .modal-description {
+        font-size: 12px;
+    }
+    
+    .notification-content h3 {
+        font-size: 14px;
+    }
+    
+    .notification-content p {
+        font-size: 11px;
+    }
+    
+    .profile-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .profile-avatar i {
+        font-size: 30px;
+    }
+    
+    #user-name,
+    #user-email {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    
+    #save-profile {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* ============================================ */
+/* تحسينات للأجهزة عالية الدقة */
+/* ============================================ */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .achievement-icon,
+    .modal-icon,
+    .notification-icon {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
+
+/* ============================================ */
+/* تحسينات الوصول للشاشات الصغيرة */
+/* ============================================ */
+
+@media (max-width: 480px) {
+    /* تحسينات حجم الخط للقراءة */
+    :root {
+        font-size: 14px;
+    }
+    
+    /* تحسينات التكبير */
+    input, select, textarea, button {
+        font-size: 16px !important; /* منع التكبير التلقائي في iOS */
+    }
+    
+    /* تحسينات التمرير السلس */
+    .achievements-container,
+    .achievement-modal {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* تحسينات الحد الأدنى لحجم اللمس */
+    .achievement-item {
+        min-height: 60px;
+    }
+    
+    /* تحسينات لعرض التاريخ العربي */
+    .detail-value {
+        direction: ltr;
+        text-align: right;
+        unicode-bidi: embed;
+    }
+    
+    /* تحسينات للهواتف ذات الشقوق */
+    .achievement-modal-overlay {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+    
+    /* تحسينات لشريط التنقل في iOS */
+    @supports (-webkit-touch-callout: none) {
+        .achievement-modal {
+            padding-bottom: calc(20px + env(safe-area-inset-bottom));
+        }
+    }
+}
+
+/* ============================================ */
+/* تحسينات الأداء للشاشات الصغيرة */
+/* ============================================ */
+
+@media (max-width: 480px) {
+    /* تقليل تأثيرات الرسوم المتحركة الثقيلة */
+    .achievement-item.earned {
+        animation-duration: 3s;
+    }
+    
+    /* تعطيل بعض التأثيرات على الأجهزة الضعيفة */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+    
+    /* تحسينات لبطء الأجهزة */
+    .achievement-item,
+    .achievement-modal,
+    .achievement-notification {
+        will-change: transform;
+    }
+}
+
+/* ============================================ */
+/* تحسينات الطباعة */
+/* ============================================ */
+
+@media print {
+    .achievement-modal-overlay,
+    .achievement-notification,
+    .toast-notification,
+    .modal-close,
+    .notification-close,
+    .btn-share {
+        display: none !important;
+    }
+    
+    .achievement-modal {
+        position: static;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
